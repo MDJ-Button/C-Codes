@@ -1,0 +1,19 @@
+// Created by SoloLearn
+
+// Language: C
+// Task Description: Find and fix the error to print "<SoloLearn>" twice.
+
+#include <stdio.h>
+void foo();
+
+int main() 
+{
+  void (*bar)() = foo;
+  (&foo)();
+  bar();
+  return 0;
+}
+
+void foo() {
+  printf("<SoloLearn>");
+}
